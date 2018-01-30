@@ -4,7 +4,7 @@
 
 <blockquote>Results</blockquote>
 
-
+<!-- Includes the post from header(search option not done yet"sample") -->
 <div class="blog-post">
     <h2 class="blog-post-title">JAVA</h2>
     <p class="blog-post-meta">january 23, 2015 by<a href="#">jorrit</a></p>
@@ -13,7 +13,6 @@
     <a href="#" class="btn btn-primary">read more</a>
 </div>
 
-
 <div class="blog-post">
   <h2 class="blog-post-title">PHP</h2>
   <p class="blog-post-meta">january 10, 2018 by<a href="#">mark</a></p>
@@ -21,7 +20,6 @@
   <blockquote><p>nog een test</p></blockquote>
   <a href="#" class="btn btn-primary">read more</a>
 </div>
-
 
 <div class="blog-post">
   <h2 class="blog-post-title">CSS</h2>
