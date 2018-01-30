@@ -1,0 +1,13 @@
+.comment{
+  margin: 10px;
+}
+
+.comment img{
+  margin:5px;
+  float: left;
+}
+
+.blog-nav-item{
+  font-size: 11px;
+  color: purple;
+}
