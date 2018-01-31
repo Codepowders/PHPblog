@@ -10,7 +10,7 @@
     <p class="blog-post-meta">january 23, 2015 by<a href="#">jorrit</a></p>
     <p>test</p>
     <blockquote><p>nog een test</p></blockquote>
-    <a href="#" class="btn btn-primary">read more</a>
+    <a href="#" class="btn">read more</a>
 </div>
 
 <div class="blog-post">
@@ -18,7 +18,7 @@
   <p class="blog-post-meta">january 10, 2018 by<a href="#">mark</a></p>
   <p>test</p>
   <blockquote><p>nog een test</p></blockquote>
-  <a href="#" class="btn btn-primary">read more</a>
+  <a href="#" class="btn">read more</a>
 </div>
 
 <div class="blog-post">
@@ -26,7 +26,7 @@
   <p class="blog-post-meta">march 1, 2015 by<a href="#">tulia</a></p>
   <p>test</p>
   <blockquote><p>nog een test</p></blockquote>
-  <a href="#" class="btn btn-primary">read more</a>
+  <a href="#" class="btn">read more</a>
 </div>
 
 

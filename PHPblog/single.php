@@ -1,4 +1,17 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title></title>
+  </head>
+  <body>
+
+
+
+
+
 <!-- Get post message in database by ID -->
 <?php include("includes/header.php");
   if(isset($_GET['post'])){
@@ -40,7 +53,7 @@
   <label for="exampleInputPassword1">comment</label>
   <textarea cols="60" rows="10" name="comment" class="form-control"></textarea>
 </div>
-  <button type="submit" name="post_comment" class="btn btn-primary">post comment</button>
+  <button type="submit" name="post_comment" class="btn">post comment <span>is Cool.</span></button>
   </form>
 
 <br>
@@ -57,7 +70,7 @@
 
 <div class="comment">
 <div class="comment-head">
-  <a href="#">test</a><button class="btn btn-info btn-xs">admin</button>
+  <a href="#">test</a><button>admin</button>
   <img width="50" height="50" src="img/img.jpg"/>
 </div>
   This is a comment by Jorrit2
@@ -65,6 +78,11 @@
 
 <br>
 <br>
+
+
+
+
+
 
 <?php include("includes/sidebar.php");?>
 <?php include("includes/footer.php");?>

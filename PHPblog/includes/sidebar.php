@@ -2,22 +2,22 @@
 
 
 
-
-
 <div class="sidebar-module">
+<div class="sidebar-module1">
   <h4>Search</4>
     <hr>
     <form method="GET" action="results.php" class="form-inline">
       <div class="form-group">
         <input type="text" name="search" placeholder="search" class="form-control" id="exampleInputName2">
       </div>
+      <button type="submit" class="btn btn-primary">Subscribe<span>click me!</button>
       </form>
   </div>
 
 
 
-
-  <div class="sidebar-module">
+<br>
+  <div class="sidebar-module2">
     <h4>Subscribe</4>
       <hr>
       <form method="POST" action="results.php" class="form-inline">
@@ -33,3 +33,4 @@
         <button type="submit" class="btn btn-primary">Subscribe</button>
         </form>
     </div>
+  </div>

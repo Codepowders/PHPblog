@@ -1,3 +1,8 @@
+
+body{
+  background-color: grey;
+}
+
 .comment{
   margin: 10px;
 }
@@ -10,4 +15,97 @@
 .blog-nav-item{
   font-size: 11px;
   color: purple;
+}
+
+.blog-header{
+  display:inline-block;
+
+}
+
+.blog-post{
+  Display: inline;
+  padding-left: 40px;
+}
+
+.sidebar-module{
+
+  display:inline;
+  float: right;
+
+}
+
+
+
+.sidebar-module1{
+
+  display:inline;
+  float: right;
+
+}
+
+.sidebar-module2{
+    display:inline-block;
+  float: right;
+
+}
+
+
+.btn {
+  border: 5px solid black;
+  background: #AED6D1;
+  color: #55706D;
+  border-radius: 40px;
+  padding: 15px 30px;
+  overflow: hidden;
+  width: 200px;
+  -webkit-transition: all        1.2s, border     0.5s 1.2s, -webkit-box-shadow 0.3s 1.5s;
+  transition: all        1.2s, border     0.5s 1.2s, -webkit-box-shadow 0.3s 1.5s;
+  transition: all        1.2s, border     0.5s 1.2s, box-shadow 0.3s 1.5s;
+  transition: all        1.2s, border     0.5s 1.2s, box-shadow 0.3s 1.5s, -webkit-box-shadow 0.3s 1.5s;
+  white-space: nowrap;
+  text-indent: 23px;
+  font-weight: bold;
+}
+.btn span {
+  display: inline-block;
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  font-weight: normal;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+  transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+  transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+  transition: opacity 0.1s 0.5s, transform 0.4s 0.5s, -webkit-transform 0.4s 0.5s;
+}
+.btn:hover {
+  text-indent: 0;
+  background: #55706D;
+  color: #FFE8A3;
+  width: 250px;
+  border: 10px solid #8DCCC4;
+  -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+.btn:hover span {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.blog-masthead {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromRight;
+
+  background: #333;
+  padding: 30px;
 }
