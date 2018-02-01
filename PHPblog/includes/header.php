@@ -21,7 +21,7 @@
   <a class="blog-nav-item active" href="#">Home</a>
 <?php if($categories->num_rows > 0) {
       while($row = $categories->fetch_assoc() ) { ?>
-    <a class="blog-nav-item" href="index.php?category=<?php echo $row ['id']; ?>"> <?php echo $row ['text']; ?></a>
+  <a class="blog-nav-item" href="index.php?category=<?php echo $row ['id']; ?>"> <?php echo $row ['text']; ?></a>
 <?php } }  ?>
 </nav>
 </div>

@@ -21,15 +21,17 @@
 
 <br>
 
+
+<?php include("includes/sidebar.php");?>
 <!-- Echo title, date and author from database -->
 <?php
   if($posts->num_rows > 0) {
   while($row = $posts->fetch_assoc() ) {?>
-<div class="blog-post">
-  <h2 class="blog-post-title"><?php echo $row['title']; ?></h2>
+<div class="blog-single">
+  <h2 class="blog-post-title"><?php echo $row['title']; ?></h2><hr>
   <p class="blog-post-meta"><?php echo $row ['date']; ?>   by <a href="#">
-      <?php echo $row ['author']; ?> </a></p>
-</div>
+      <?php echo $row ['author']; ?> </a></p><hr>
+
 <?php echo $row ['body']; ?>
 </div>
 <?php } } ?>
@@ -84,5 +86,5 @@
 
 
 
-<?php include("includes/sidebar.php");?>
+
 <?php include("includes/footer.php");?>
