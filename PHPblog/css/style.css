@@ -56,13 +56,18 @@ body {
 
 
 
+#createbody{
+    width: 50vw;
+    height: 60vh;
+}
 
 
-
-
-
-
-
+.createpost{
+    margin-left: 20vw;
+    margin-top: 5vh;
+    display:inline-block;
+    Margin-bottom: 5vh;
+}
 
 
 

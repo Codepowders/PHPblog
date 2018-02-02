@@ -9,18 +9,6 @@
   <body>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Includes the header -->
 <?php include("includes/header.php");
   if(isset($_GET['category'] ) ) {
@@ -35,25 +23,19 @@
     <h1 class="blog-title">Blog title</h1>
     <p class="lead blog-description">Blog description</p>
   </div>
-  
+
   <?php include("includes/sidebar.php");?>
 
+<!-- Echo blog from header -->
 <?php if($posts->num_rows > 0) {
       while($row = $posts->fetch_assoc() ) { ?>
-
-<!-- Echo blog from header -->
 <div class="blog-post">
   <h2 class="blog-post-title"><a href="single.php?post=<?php echo $row['id']?>"><?php echo $row ['title']; ?></a></h2><hr>
   <p class="blog-post-meta"><?php echo $row ['date']; ?> <a href="#"><?php echo $row ['author']; ?></a></p><hr>
-  
-<p class="blog-post-body"><?php $body = $row ['body']; echo substr($body, 0 ,200) , "...."; ?></p>
-
-<br>
-  <a href="single.php?post=<?php echo $row ['id'] ?>" class="btn">readmore<span>-----read more</a>
+  <p class="blog-post-body"><?php $body = $row ['body']; echo substr($body, 0 ,200) , "...."; ?></p><br>
+  <a href="single.php?post=<?php echo $row ['id'] ?>" class="btn">readmore<span>CLICK ME</a>
 </div>
 <?php } } ?>
-
-<!-- Includes the sidebar/footer in the index -->
 
 <?php include("includes/footer.php");?>
 

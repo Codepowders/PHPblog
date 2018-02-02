@@ -18,7 +18,8 @@
 <div class="blog-masthead">
 <div class="container">
 <nav class="blog-nav">
-  <a class="blog-nav-item active" href="#">Home</a>
+  <a class="blog-nav-item active" href="index.php">Home</a>
+  <a class="blog-nav-item active" href="createpost.php">Post article!</a>
 <?php if($categories->num_rows > 0) {
       while($row = $categories->fetch_assoc() ) { ?>
   <a class="blog-nav-item" href="index.php?category=<?php echo $row ['id']; ?>"> <?php echo $row ['text']; ?></a>

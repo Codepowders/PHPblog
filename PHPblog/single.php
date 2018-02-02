@@ -8,21 +8,15 @@
   </head>
   <body>
 
-
-
-
-
 <!-- Get post message in database by ID -->
 <?php include("includes/header.php");
   if(isset($_GET['post'])){
     $id = mysqli_real_escape_string($db , $_GET['post']);
     $query = "SELECT * FROM posts WHERE id = '$id'";}
-    $posts = $db->query($query);?>
-
-<br>
-
+    $posts = $db->query($query);?><br>
 
 <?php include("includes/sidebar.php");?>
+
 <!-- Echo title, date and author from database -->
 <?php
   if($posts->num_rows > 0) {
@@ -30,12 +24,10 @@
 <div class="blog-single">
   <h2 class="blog-post-title"><?php echo $row['title']; ?></h2><hr>
   <p class="blog-post-meta"><?php echo $row ['date']; ?>   by <a href="#">
-      <?php echo $row ['author']; ?> </a></p><hr>
-
+<?php echo $row ['author']; ?> </a></p><hr>
 <?php echo $row ['body']; ?>
 </div>
 <?php } } ?>
-
 
 <!-- Form comment area with example, not in database yet -->
 <blockquote>2 comments</blockquote>
@@ -56,11 +48,7 @@
   <textarea cols="60" rows="10" name="comment" class="form-control"></textarea>
 </div>
   <button type="submit" name="post_comment" class="btn">post comment <span>is Cool.</span></button>
-  </form>
-
-<br>
-<br>
-<hr>
+  </form><br><br><hr>
 
 <div class="comment">
 <div class="comment-head">
@@ -76,15 +64,6 @@
   <img width="50" height="50" src="img/img.jpg"/>
 </div>
   This is a comment by Jorrit2
-</div>
-
-<br>
-<br>
-
-
-
-
-
-
+</div><br><br>
 
 <?php include("includes/footer.php");?>
